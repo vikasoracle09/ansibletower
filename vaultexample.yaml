@@ -1,0 +1,7 @@
+---
+- hosts: linux
+  tasks:
+  - name: create a senstive file
+    copy:
+      content="This file containes proprietary information"
+      dest=/home/ansible/proprietary.txt
